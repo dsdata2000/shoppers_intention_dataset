@@ -1,6 +1,6 @@
 # Contents 
-1. [Introduction](README.md#Introduction)
-2. [Unit Test ](README.md#Strategy )
+1. [Introduction](README.md#Intro)
+2. [Unit Test ](README.md#unit-test )
 3. [Full Functionality Test ](README.md#FFT)
 
 # Introduction 
