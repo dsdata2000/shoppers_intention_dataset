@@ -1,7 +1,8 @@
 # Contents 
 1. [Introduction](README.md#Intro)
-2. [Unit Test ](README.md#unit-test )
-3. [Full Functionality Test ](README.md#FFT)
+2. [Input Sample Cleaning](README.md#cleaning)
+3. [Unit Test ](README.md#unit-test )
+4. [Full Functionality Test ](README.md#FFT)
 
 # Introduction 
 Input data set contains information on prescription drug prescribed by healthcare providers. It contains id, prescriber last and first name, drug name and cost as comma separated items. 
