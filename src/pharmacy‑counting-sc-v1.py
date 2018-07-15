@@ -28,7 +28,8 @@ def pharmacy_counting():
     for i in range(NODE) :  # 24525860
         line = data_input.readline()
         lins_sp = line.split(',')
-        cs = lins_sp[4].split('.')
+        cs1 = lins_sp[4]
+        cs = cs1.split('.')
         if ( i != 0 and len(cs) != 1 ) :
             data_c_dn_fn_ln.append(line)  # only 24516693 are cleaned up cost 99%
             cost_data.append(lins_sp[4])
