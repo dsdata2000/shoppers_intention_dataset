@@ -32,8 +32,9 @@ def pharmacy_counting():  #
         if ( i != 0 and len(cs) != 1 ) :
             data_c_dn_fn_ln.append(line)  # only 24516693 are cleaned up cost 99%
             cost_data.append(lins_sp[4])
-            idx.append(i)
-
+            idx.append(i)                
+    data.close()
+                
     print '\n'
     #print cost_data[0:2]
     print '\n'
