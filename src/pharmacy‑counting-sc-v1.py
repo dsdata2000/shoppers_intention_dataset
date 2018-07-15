@@ -1,7 +1,7 @@
 
-# NODE => N_of_data_entry
-NODE = int(round(24525860/100))
-N_unit_test = 6000
+# NODE => N_of_data_entry; 500000
+NODE = int(round(500000/1000))
+N_unit_test = 10
 N_start = int(round(0))   #  24525860/2, 24520000
 N = N_start + N_unit_test
 
@@ -24,7 +24,7 @@ def pharmacy_counting():  #
     data_c_dn_fn_ln = []
     cost_data = []
     idx = []
-    data = open('./input/de_cc_data.txt','r')
+    data = open('./input/itcont.txt,'r')
     for i in range(NODE) :  # 24525860
         line = data.readline()
         lins_sp = line.split(',')
