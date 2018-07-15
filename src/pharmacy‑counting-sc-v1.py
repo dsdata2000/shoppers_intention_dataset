@@ -24,7 +24,7 @@ def pharmacy_counting():
     data_c_dn_fn_ln = []
     cost_data = []
     idx = []
-    data_input = open('./input/itcont.txt,'r')
+    data_input = open('./input/itcont.txt','r')
     for i in range(NODE) :  # 24525860
         line = data.readline()
         lins_sp = line.split(',')
