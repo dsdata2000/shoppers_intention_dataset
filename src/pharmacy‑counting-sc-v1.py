@@ -20,11 +20,11 @@ def count_frequency( list1, item1 ) :
             s += 1
     return s
 
-def pharmacy_counting():  #
+def pharmacy_counting():  
     data_c_dn_fn_ln = []
     cost_data = []
     idx = []
-    data = open('../input/itcont.txt,'r')
+    data_input = open('./input/itcont.txt,'r')
     for i in range(NODE) :  # 24525860
         line = data.readline()
         lins_sp = line.split(',')
@@ -33,7 +33,7 @@ def pharmacy_counting():  #
             data_c_dn_fn_ln.append(line)  # only 24516693 are cleaned up cost 99%
             cost_data.append(lins_sp[4])
             idx.append(i)                
-    data.close()
+    data_input.close()
                 
     print '\n'
     #print cost_data[0:2]
@@ -138,7 +138,7 @@ def pharmacy_counting():  #
     #print top_drug_name, num_prescriber_rep, top_drug_cost
 
     # write output
-    output = open('../output/top_cost_drug.txt','wb')
+    output = open('./output/top_cost_drug.txt','wb')
     for k in range( len(top_drug_name) ) :
         output.write( '%s%s%s%s%s\n' % (top_drug_name[k],',',num_prescriber_rep[k],',',str(top_drug_cost[k])) )
     output.close()
