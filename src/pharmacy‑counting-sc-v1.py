@@ -143,5 +143,5 @@ def pharmacy_counting():
     for k in range( len(top_drug_name) ) :
         output.write( '%s%s%s%s%s\n' % (top_drug_name[k],',',num_prescriber_rep[k],',',str(top_drug_cost[k])) )
     output.close()
-
-print pharmacy_counting()
+    
+pharmacy_counting()
