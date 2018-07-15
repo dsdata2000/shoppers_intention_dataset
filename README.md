@@ -1,7 +1,7 @@
 # Contents 
 1. [Introduction](README.md#Intro)
 2. [Input Sample Cleaning](README.md#cleaning)
-3.[Additional Subroutines](README.md#sub)
+3. [Additional Subroutines](README.md#sub)
 4. [Solution Approach](README.md#solapp)
 5. [Unit Test ](README.md#unit-test )
 6. [Full Functionality Test ](README.md#FFT)
