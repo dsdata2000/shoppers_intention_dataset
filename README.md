@@ -25,8 +25,6 @@ In step 2, L46; a subset of the above data was choosen for analysis of various u
 
 In step 3, L  
  
-
-
 # Unit Test 
 Since the input data set contains over 24 million records from which a list of all drugs be generated as per their cost in descending order along with the number of times the same drug was prescribed by unique individual identified with the same last and first name.   
 
