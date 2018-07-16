@@ -27,7 +27,7 @@ def pharmacy_counting():
     for i in range(NODE) :  # 24525860
         line = data_input.readline()
         lins_sp = line.split(',')
-        print type(lins_sp[4])
+        data_c_dn_fn_ln.append(line)
         
     data_input.close()
 
