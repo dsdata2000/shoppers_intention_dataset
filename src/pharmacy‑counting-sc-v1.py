@@ -99,6 +99,44 @@ def pharmacy_counting():
     # drug name and full name using data_c_dn_fn_ln_unit_v1 data
 
     # top_cost_drug.txt with drug_name,num_prescriber,total_cost
+   
+    top_drugs_prescriber = []
+    for i in range(len(index)) :
+        top_drugs_prescriber.append(data_c_dn_fn_ln_unit_v1[index[i]])
+    #print top_drugs_prescriber[0:5]
+
+    num_prescriber_rep = [] # No of times a person shares the drug
+    for i in range(len(index)) :
+        item = top_drugs_prescriber[i]
+        freq = count_frequency( data_c_dn_fn_ln_unit_v1, item )
+        num_prescriber_rep.append(freq)
+
+    # print '\n'
+    # print 'index : ', len(index), index[0:5]
+    # print '\n'
+    # print 'top_drugs_&_prescribers : ', len(top_drugs_prescriber), top_drugs_prescriber[0:5]
+    # print'\n'
+    # print 'num_of_prescriber : ', len(num_prescriber_rep), ', max value :', max(num_prescriber_rep), num_prescriber_rep[0:5]
+    # print '\n'
+    # print 'drug_cost : ', len(drug_cost), drug_cost[0:5]
+    # print '\n'
+
+    # top_cost_drug.txt need to be written as :
+    # drug_name,num_prescriber,total_cost :
+    # CHLORPROMAZINE,2,3000
+
+    top_drug_name = []
+    top_drug_cost = []
+    for i in range( len(drug_cost) ) :
+        top_drug_name.append(top_drugs_prescriber[i][1])
+        c = int(round(drug_cost[i]))
+        top_drug_cost.append(c)
+
+
+    top_drug_name.insert(0, 'drug_name')
+    num_prescriber_rep.insert(0, 'num_prescriber')
+    top_drug_cost.insert(0, 'total_cost')
+    #print top_drug_name, num_prescriber_rep, top_drug_cost
     print('working')
 
 print pharmacy_counting()
