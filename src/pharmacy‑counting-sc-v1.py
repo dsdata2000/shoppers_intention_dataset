@@ -7,4 +7,4 @@ def test():
         output_data.write('%s\n' %(cs) )
     output_data.close()
     
-test()
+print test()
