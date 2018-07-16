@@ -71,6 +71,18 @@ def pharmacy_counting():
     # need to be sorted for all the drugs in descending order along with their
     # indices so that corresponding drug_name can be identified, as well as
     # number of times a drug was prescribed for the same prescriber.
+   
+    drug_cost = []
+    for i in range(len(cost)) :
+        c1 = float(cost[i])
+        drug_cost.append(c1)
+    drug_cost = list(set(drug_cost)) # added later
+    drug_cost.sort(reverse = True)
+    #print  'sorted drug_cost :', drug_cost[0:20]
+
+
+    #print cost_data_unit[0:20]
+    #print len(cost_data_unit), len(drug_cost)
 
     
     pharmacy_counting()
