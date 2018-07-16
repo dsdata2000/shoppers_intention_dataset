@@ -101,8 +101,6 @@ def pharmacy_counting():
     # top_cost_drug.txt with drug_name,num_prescriber,total_cost
     print('working')
 
-
-    
-    pharmacy_counting()
+print pharmacy_counting()
 
     
