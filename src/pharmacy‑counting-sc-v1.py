@@ -53,7 +53,25 @@ def pharmacy_counting():
     # from data_c_dn_fn_ln data and named as data_c_dn_fn_ln_v1
 
     # step 3 : 
-    
+    cost = []
+    drug_name = []
+    #prescriber_name_lf = []
+    data_c_dn_fn_ln_unit_v1 = []
+    for i in range(len(data_c_dn_fn_ln_unit)) :
+        entry_split = data_c_dn_fn_ln_unit[i].split(',')
+        cost.append(entry_split[4])
+        drug_name.append(entry_split[3])
+        #prescriber_name_lf.append( [entry_split[1], entry_split[2]] )
+        data_c_dn_fn_ln_unit_v1.append( [[entry_split[1], entry_split[2]],entry_split[3] ])
+
+    #print data_c_dn_fn_ln_unit_v1[0:5]
+
+
+    # cost[] contains the cost list of all drugs for the unit. Now top_cost[]
+    # need to be sorted for all the drugs in descending order along with their
+    # indices so that corresponding drug_name can be identified, as well as
+    # number of times a drug was prescribed for the same prescriber.
+
     
     pharmacy_counting()
 
