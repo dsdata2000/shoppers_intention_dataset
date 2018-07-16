@@ -4,6 +4,6 @@ def test():
     for i in range( len(x) ) :
         cs = str(x[i])
         print cs 
-        #output_data.write('%s\n' % cs )
+        output_data.write('%s\n' % cs )
     output_data.close()
 test()
