@@ -137,6 +137,13 @@ def pharmacy_counting():
     num_prescriber_rep.insert(0, 'num_prescriber')
     top_drug_cost.insert(0, 'total_cost')
     #print top_drug_name, num_prescriber_rep, top_drug_cost
+      
+    # write output
+    output = open('./output/top_cost_drug.txt','wb')
+    for k in range( len(top_drug_name) ) :
+        output.write( '%s%s%s%s%s\n' % (top_drug_name[k],',',num_prescriber_rep[k],',',str(top_drug_cost[k])) )
+    output.close()
+   
     print('working')
 
 print pharmacy_counting()
