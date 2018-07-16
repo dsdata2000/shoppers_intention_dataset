@@ -1,4 +1,5 @@
-# NODE => N_of_data_entry; 500000
+   
+# N_of_data_entry  = 24525860 (NODE)
 NODE = int(round(5))
 N_unit_test = 3
 N_start = int(round(0))   #  24525860/2, 24520000
@@ -20,20 +21,32 @@ def count_frequency( list1, item1 ) :
     return s
 
 def pharmacy_counting():
-    data_c_dn_fn_ln = []
+    # step 1 :
+    data_c_dn_fn_ln = []  # list for cost-drug name - first name - last name
     cost_data = []
-    idx = []
-    data_input = open('./input/itcont.txt','r')
-    for i in range(NODE) :  # 24525860
-        line = data_input.readline()
+    data = open('./input/itcont.txt','r')
+    for i in range(NODE) :
+        line = data.readline()
         lins_sp = line.split(',')
-        cs = lins_sp[4]
-        print cs 
-        
-    data_input.close()
-    
+        cost_data.append(lins_sp[4])
+        data_c_dn_fn_ln.append(line)  # checked for all records
+    data.close()
+    data_c_dn_fn_ln.pop(0)
+    cost_data.pop(0)
+    #print data_c_dn_fn_ln[24525860-2]
 
+    # since the input data set is large with 24 million entries, so unit test
+    # can be carried on by choosing a smaller unit say 5000 entries by picking
+    # then from the start, end, in the middle or anywhere from the 24 million
+    # entries
+
+    # N_unit_test = 500
+    # N_start = int(round(24525/2))
+    # N = N_start + N_unit_test
+
+    # step 2:
     
     
-pharmacy_counting()
+    pharmacy_counting()
+
     
