@@ -3,7 +3,6 @@ def test():
     x = [10, 20, 30]
     for i in range( len(x) ) :
         cs = str(x[i])
-        print cs 
-        output_data.write('%s\n' % cs )
+        print type(cs)        
     output_data.close()
 test()
