@@ -1,5 +1,5 @@
 # NODE => N_of_data_entry; 500000
-NODE = int(round(500000/100))
+NODE = int(round(1000))
 N_unit_test = 100
 N_start = int(round(0))   #  24525860/2, 24520000
 N = N_start + N_unit_test
