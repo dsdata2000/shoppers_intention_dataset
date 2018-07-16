@@ -19,7 +19,10 @@ def count_frequency( list1, item1 ) :
             s += 1
     return s
 
-def test():
+def pharmacy_counting():
     print('h')
-test()
+
+    
+    
+pharmacy_counting()
     
