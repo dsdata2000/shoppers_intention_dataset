@@ -45,6 +45,14 @@ def pharmacy_counting():
     # N = N_start + N_unit_test
 
     # step 2:
+    data_c_dn_fn_ln_unit = data_c_dn_fn_ln[N_start:N] # data_c_dn_fn_ln list for smaller unit
+    cost_data_unit = cost_data[N_start:N]
+    #print data_c_dn_fn_ln_unit[0:2]
+
+    # since ids are not used for this analysis, hence ids need to be removed
+    # from data_c_dn_fn_ln data and named as data_c_dn_fn_ln_v1
+
+    # step 3 : 
     
     
     pharmacy_counting()
