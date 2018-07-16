@@ -32,6 +32,8 @@ def pharmacy_counting():
             cost_data.append(lins_sp[4])
         
     data_input.close()
+    print data_c_dn_fn_ln[0:1] 
+    print cost_data[0:1]
 
     
     
