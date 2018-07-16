@@ -20,7 +20,11 @@ def count_frequency( list1, item1 ) :
     return s
 
 def pharmacy_counting():
-    print('h')
+    data_c_dn_fn_ln = []
+    cost_data = []
+    idx = []
+    data_input = open('./input/itcont.txt','r')
+    data_input.close()
 
     
     
