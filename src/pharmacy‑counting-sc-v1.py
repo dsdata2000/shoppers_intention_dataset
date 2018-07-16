@@ -1,7 +1,7 @@
    
 # N_of_data_entry  = 24525860 (NODE)
-NODE = int(round(10000))
-N_unit_test = 1000
+NODE = int(round(1000))
+N_unit_test = 100
 N_start = int(round(0))   #  24525860/2, 24520000
 N = N_start + N_unit_test
 
