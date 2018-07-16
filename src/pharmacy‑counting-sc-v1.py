@@ -28,6 +28,7 @@ def pharmacy_counting():
         line = data_input.readline()
         lins_sp = line.split(',')
         data_c_dn_fn_ln.append(line)
+        cost_data.append(lins_sp[4])
         
     data_input.close()
 
