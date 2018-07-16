@@ -83,6 +83,24 @@ def pharmacy_counting():
 
     #print cost_data_unit[0:20]
     #print len(cost_data_unit), len(drug_cost)
+   
+    # convert items of cost_data_unit into float
+    cost_data_unit_f = []
+    for i in range( len(cost_data_unit) ) :
+        c2 = float(cost_data_unit[i])
+        cost_data_unit_f.append(c2)
+
+    #print cost_data_unit_f
+    index = index_list(cost_data_unit_f,drug_cost)
+    #print index[0:10]
+
+    # Now frequency of the top drugs that was prescribed multiple times
+    # to same individual need to counted based on matching the
+    # drug name and full name using data_c_dn_fn_ln_unit_v1 data
+
+    # top_cost_drug.txt with drug_name,num_prescriber,total_cost
+    print('working')
+
 
     
     pharmacy_counting()
